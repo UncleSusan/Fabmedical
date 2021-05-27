@@ -1,4 +1,4 @@
-me: content-web
+name: content-web
 
 # This workflow is triggered on push to the 'content-web' directory of the  master branch of the repository
 on:
@@ -15,8 +15,8 @@ on:
 env:
   imageRepository: 'content-web'
   resourceGroupName: 'fabmedical-407207'
-  containerRegistryName: 'fabmedical407207'
-  containerRegistry: 'fabmedical407207.azurecr.io'
+  containerRegistryName: 'acr407207'
+  containerRegistry: 'acr407207.azurecr.io'
   dockerfilePath: './content-web'
   tag: '${{ github.run_id  }}'
 
